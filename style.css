@@ -1,0 +1,140 @@
+body {
+  background-color: rebeccapurple;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: fit-content;
+  background-color: goldenrod;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-style: italic;
+  text-align: center;
+  font-weight: bolder;
+  color: rebeccapurple;
+}
+
+.playground {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.middle-container {
+  padding: 0px 0px 50px 0px;
+  display: flex;
+  flex: 1;
+  justify-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: fit-content;
+  align-self: center;
+  text-align: center;
+  padding: 1vw 6vw;
+  font-size: 2.2vw;
+  border-radius: 40px;
+  background-color: maroon;
+  color: aliceblue;
+  font-family: cursive;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.vs {
+  font-size: 8vw;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.left-player,
+.right-player,
+h2 {
+  font-family: cursive;
+  color: aliceblue;
+  font-size: 2.5vw;
+}
+
+.left-player {
+  text-align: center;
+}
+
+.right-player {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  font-family: monospace;
+  width: 100%;
+  font-size: 1vw;
+  background-color: cadetblue;
+}
+
+img {
+  width: 15vw;
+  height: auto;
+}
+
+.winner {
+  text-align: center;
+  font-size: 2vw;
+  color: aliceblue;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    font-size: 3.5vw;
+  }
+
+  img {
+    width: 20vw;
+    height: auto;
+  }
+
+  .playground {
+    flex-direction: column;
+  }
+
+  .left-player,
+  .right-player,
+  h2 {
+    font-size: 4vw;
+  }
+
+  .footer {
+    font-size: 2.5vw;
+  }
+
+  .header h1 {
+    font-size: 6vw;
+  }
+}
